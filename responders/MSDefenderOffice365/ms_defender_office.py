@@ -56,7 +56,7 @@ class MsDefenderOffice365Responder(Responder):
         except ValueError as e:
             self.error(f"While loading the certificate data: {e}")
 
-        script_name = f'scripts/{self.service}_sender.ps1'
+        script_name = f'scripts/{self.service}.ps1'
         process_args = [
             "pwsh",
             script_name,
